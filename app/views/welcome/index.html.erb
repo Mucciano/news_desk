@@ -1,0 +1,130 @@
+<h1>News Desk</h1>
+
+    <div class="nyt headlines">
+      <div style="display:none">
+      <p id="nyArr0"><%= @ny_data[0] %> </p>
+      <p id="nyArr1"><%= @ny_data[1] %> </p>
+      <p id="nyArr2"><%= @ny_data[2] %> </p>
+      <p id="nyArr3"><%= @ny_data[3] %> </p>
+      </div>
+      <div class="nytext">
+        <input type="button" id="nyChartButton" name="name" value="See Chart">
+        <%  @ny.each do |e|  %>
+          <% if e.text.split.count > 3 then %>
+          <a href="https://www.google.com/search?q='<%= e.text %>'" target="blank"> <p id="link"><%= e.text %></p></a>
+            <% end %>
+          <% end %>
+      </div>
+      <div class="nychart" >
+        <input type="button" id="nyText" name="name" value="See Text">
+        <h1 id="nyChart"></h1>
+      </div>
+    </div>
+
+
+    <div class="demnow headlines">
+      <div style="display:none">
+      <p id="demArr0"><%= @dem_data[0] %> </p>
+      <p id="demArr1"><%= @dem_data[1] %> </p>
+      <p id="demArr2"><%= @dem_data[2] %> </p>
+      <p id="demArr3"><%= @dem_data[3] %> </p>
+      </div>
+      <div class="demtext">
+        <input type="button" id="demChartButton" name="name" value="See Chart">
+        <%  @dem.each do |e|  %>
+          <% if e.text.split.count > 3 then %>
+          <a href="https://www.google.com/search?q='<%= e.text %>'" target="blank"> <p id="link"><%= e.text %></p></a>
+            <% end %>
+          <% end %>
+      </div>
+      <div class="demchart">
+        <input type="button" id="demText" name="name" value="See Text">
+        <h1 id="demChart"></h1>
+      </div>
+    </div>
+
+    <div class="guardian headlines">
+      <div style="display:none">
+      <p id="guardArr0"><%= @guard_data[0] %> </p>
+      <p id="guardArr1"><%= @guard_data[1] %> </p>
+      <p id="guardArr2"><%= @guard_data[2] %> </p>
+      <p id="guardArr3"><%= @guard_data[3] %> </p>
+      </div>
+        <div class="guardtext">
+          <input type="button" id="guardChartButton" name="name" value="See Chart">
+          <%  @guard.each do |e|  %>
+            <% if e.text.split.count > 3 then %>
+            <a href="https://www.google.com/search?q='<%= e.text %>'" target="blank"> <p id="link"><%= e.text %></p></a>
+              <% end %>
+            <% end %>
+        </div>
+          <div class="guardchart">
+            <input type="button" id="guardText" name="name" value="See Text">
+            <h1 id="guardChart"></h1>
+          </div>
+    </div>
+
+
+    <div class="bbc headlines">
+      <div style="display:none">
+      <p id="bbcArr0"><%= @bbc_data[0] %> </p>
+      <p id="bbcArr1"><%= @bbc_data[1] %> </p>
+      <p id="bbcArr2"><%= @bbc_data[2] %> </p>
+      <p id="bbcArr3"><%= @bbc_data[3] %> </p>
+      </div>
+        <div class="bbctext">
+          <input type="button" id="bbcChartButton" name="name" value="See Chart">
+          <%  @bbc.each do |e|  %>
+            <% if e.text.split.count > 3 then %>
+              <a href="https://www.google.com/search?q='<%= e.text %>'" target="blank"> <p id="link"><%= e.text %></p></a>
+              <% end %>
+            <% end %>
+        </div>
+        <div class="bbcchart">
+          <input type="button" id="bbcText" name="name" value="See Text">
+          <h1 id="bbcChart"></h1>
+        </div>
+    </div>
+
+    <div class="wapo headlines">
+      <div style="display:none">
+      <p id="wapoArr0"><%= @wa_post_data[0] %> </p>
+      <p id="wapoArr1"><%= @wa_post_data[1] %> </p>
+      <p id="wapoArr2"><%= @wa_post_data[2] %> </p>
+      <p id="wapoArr3"><%= @wa_post_data[3] %> </p>
+      </div>
+      <div class="wapotext">
+        <input type="button" id="wapoChartButton" name="name" value="See Chart">
+        <%  @wa_post.each do |e|  %>
+          <% if e.text.split.count > 3 then %>
+            <a href="https://www.google.com/search?q='<%= e.text %>'" target="blank"> <p id="link"><%= e.text %></p></a>
+            <% end %>
+          <% end %>
+      </div>
+      <div class="wapochart">
+        <input type="button" id="wapoText" name="name" value="See Text">
+        <h1 id="wapoChart"></h1>
+      </div>
+    </div>
+
+  <div class="cnn headlines">
+
+    <div style="display:none">
+    <p id="cnnArr0"><%= @cnn_data[0] %> </p>
+    <p id="cnnArr1"><%= @cnn_data[1] %> </p>
+    <p id="cnnArr2"><%= @cnn_data[2] %> </p>
+    <p id="cnnArr3"><%= @cnn_data[3] %> </p>
+    </div>
+    <div class="cnntext">
+      <input type="button" id="cnnChartButton" name="name" value="See Chart">
+      <%  @cnn.each do |e|  %>
+        <% if e.text.split.count > 3 then %>
+          <a href="https://www.google.com/search?q='<%= e.text %>'" target="blank"> <p id="link"><%= e.text %></p></a>
+          <% end %>
+        <% end %>
+    </div>
+    <div class="cnnchart">
+      <input type="button" id="cnnText" name="name" value="See Text">
+      <h1 id="cnnChart"></h1>
+    </div>
+  </div>

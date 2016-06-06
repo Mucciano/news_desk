@@ -1,0 +1,37 @@
+<head>
+  <script src="assets/keyword.js" charset="utf-8"></script>
+</head>
+
+  <h1>Record of Keyword Data</h1>
+  <div class="nyt dataheadlines">
+    <input type="button"  id = "monday"    name="name" value="Monday" >
+    <input type="button"  id = "tuesday"   name="name" value="Tuesday">
+    <input type="button"  id = "wednesday" name="name" value="Wednesday">
+    <input type="button"  id = "thursday"  name="name" value="Thursday">
+    <input type="button"  id = "friday"   name="name" value="Friday">
+    <div style="display:none">
+    <p id="monday0" ><%= @data1.political_score %> </p>
+    <p id="monday1" ><%= @data1.conflict_score %> </p>
+    <p id="monday2" ><%= @data1.econ_score %> </p>
+    <p id="monday3" ><%= @data1.tech_score %> </p>
+    <p id="tuesday0" ><%= @data2.political_score %> </p>
+    <p id="tuesday1" ><%= @data2.conflict_score %> </p>
+    <p id="tuesday2" ><%= @data2.econ_score %> </p>
+    <p id="tuesday3" ><%= @data2.tech_score %> </p>
+    <p id="wednesday0" ><%= @data3.political_score %> </p>
+    <p id="wednesday1" ><%= @data3.conflict_score %> </p>
+    <p id="wednesday2" ><%= @data3.econ_score %> </p>
+    <p id="wednesday3" ><%= @data3.tech_score %> </p>
+    <p id="thursday0" ><%= @data4.political_score %> </p>
+    <p id="thursday1" ><%= @data4.conflict_score %> </p>
+    <p id="thursday2" ><%= @data4.econ_score %> </p>
+    <p id="thursday3" ><%= @data4.tech_score %> </p>
+    <p id="friday0" ><%= @data5.political_score %> </p>
+    <p id="friday1" ><%= @data5.conflict_score %> </p>
+    <p id="friday2" ><%= @data5.econ_score %> </p>
+    <p id="friday3" ><%= @data5.tech_score %> </p>
+    </div>
+    <div class="examplechart" >
+      <h1 id="exampleChart"></h1>
+    </div>
+  </div>

@@ -1,0 +1,9 @@
+var stuff = [
+
+  {"name": "tech", "words": 5 },
+  {"name": "international", "words": 1 },
+  {"name": "poltics", "words": 6 },
+  {"name": "econ", "words": 1 }
+
+
+]
